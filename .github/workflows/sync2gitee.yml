@@ -1,0 +1,23 @@
+name: Mirror 
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  run:
+    name: Sync-GitHub-to-Gitee-Gitlab
+    if: ${{ github.repository_owner == 'wzwtt' }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror the Github repos to Gitee.
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/wzwtt
+        dst: gitee/wzwtt
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        static_list: "ikun"
+        force_update: true
+
