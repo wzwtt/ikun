@@ -1,6 +1,7 @@
 # 欢迎各位 IKUN ！
-这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集的 IKUN 表情包。感谢制作这些表情包的全民制作人。
-如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) [（镜像下载）](https://drive.wzwtt.cf/mirrors/github-release/current/dotnetcore_FastGithub/) 工具加速访问。
+这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集的 IKUN 表情包。感谢制作这些表情包的**全民制作人**。
+
+如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) [（镜像下载）](https://drive.wzwtt.cf/mirrors/github-release/current/dotnetcore_FastGithub/) 工具加速访问。使用 [Github 镜像站](https://github.wzwtt.cf/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
 
 ## 目录说明
 still —— 静态表情包
@@ -18,7 +19,10 @@ help —— 帮助文档
 
 每个人的力量都很重要。如果这是您第一次参与开源社区，请查阅有关资料，了解如何为开源社区贡献您的力量。我们深知略显复杂的操作可能会给作为入门者的您带来重重困难。尽管道路崎岖，但我们坚信有关详细的资料以及您对咯咯的爱，一定会为您扫除一切障碍。
 
+[Github 镜像站](https://github.wzwtt.cf/wzwtt/ikun)和 [Gitee](https://gitee.com/wzwtt/ikun) 仅作镜像使用，请务必在 [Github](https://github.com/wzwtt/ikun) 上提交贡献。
+
 建议使用 Git 版本控制工具上传并提交 Pull requests 。
+
 **注意：在上传前请检查您所贡献的表情包是否他人未曾上传过，确认文件是否根据[命名规则](/help/name_rules.md)正确命名并且已经放置在正确的分类文件夹内。**
 
 让我们一起创造历史。
