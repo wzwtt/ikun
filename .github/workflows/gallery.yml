@@ -22,6 +22,8 @@ jobs:
         bash gallery.sh
     - name: Pushing
       run: |
+        git config --global user.email "wzwttol@outlook.com"
+        git config --global user.name "wzwtt"
         cd ikun
         git checkout gallery
         cd ..
@@ -29,6 +31,4 @@ jobs:
         cd ikun
         git add .
         git commit -m "Create Gallery"
-        git config --global user.email "wzwttol@outlook.com"
-        git config --global user.name "wzwtt"
         git push origin gallery --force
