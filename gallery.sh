@@ -222,7 +222,7 @@ EOF
 	cat >> "$MY_IMAGE_HTML_FILE" << EOF
 <div class="row">
 	<div class="col">
-		<p><img src="$VIEW_IMGURL$MY_HEIGHT_LARGE/$MY_FILENAME" class="img-fluid" alt="Image: $MY_FILENAME"></p>
+		<p><img src="$VIEW_IMGURL$MY_THUMBDIR/$MY_HEIGHT_LARGE/$MY_FILENAME" class="img-fluid" alt="Image: $MY_FILENAME"></p>
 	</div>
 </div>
 <div class="row">
