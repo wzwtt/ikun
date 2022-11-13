@@ -18,7 +18,7 @@ OUTPUT="$(pwd)/../output"
 SOURCE_IMGURL="https://gcore.jsdelivr.net/gh/wzwtt/ikun@master/still/"   ##"$INPUT/"   ## must end with "/"
 VIEW_IMGURL="https://gcore.jsdelivr.net/gh/wzwtt/ikun@gallery/"  ## must end with "/"
 MY_INDEX_HTML_FILE="index.html"
-MY_TITLE="表情包一览"
+MY_TITLE="IKUN 表情包一览"
 MY_FOOTER='本页面自动生成于'
 
 # Use convert from ImageMagick
