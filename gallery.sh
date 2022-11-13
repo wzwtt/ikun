@@ -12,7 +12,7 @@
 MY_HEIGHT_SMALL=187
 MY_HEIGHT_LARGE=768
 MY_QUALITY=85
-MY_THUMBDIR="__thumbs"
+MY_THUMBDIR="thumbs"
 INPUT="$(pwd)/still"
 OUTPUT="$(pwd)/../output"
 SOURCE_IMGURL="https://gcore.jsdelivr.net/gh/wzwtt/ikun@master/still/"   ##"$INPUT/"   ## must end with "/"
