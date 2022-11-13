@@ -1,7 +1,11 @@
 # 欢迎各位 IKUN ！
 这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集的 IKUN 表情包。感谢制作这些表情包的**全民制作人**。
 
+[IKUN 表情包一览](https://ikun.wzwtt.cf)（目前仅提供静态图片的预览）
+
 如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) [（镜像下载）](https://drive.wzwtt.cf/mirrors/github-release/current/dotnetcore_FastGithub/) 工具加速访问。使用 [Github 镜像站](https://github.wzwtt.cf/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
+
+仓库中 gallery.sh 文件源代码修改自 [gallery_shell](https://github.com/Cyclenerd/gallery_shell) 项目，按照 [gallery_shell](https://github.com/Cyclenerd/gallery_shell) 的开源许可证要求，本项目遵循 GNU General Public License v3.0 协议。
 
 ## 目录说明
 still —— 静态表情包

@@ -6,6 +6,13 @@
 # Modified by wzwtt on November 12, 2022.
 
 #########################################################################################
+#The modified functions of wzwtt are as follows: make the input/output directory 
+#changeable; The generated image can be easily loaded using CDNs such as jsdelivr; 
+#Add PNG format picture support; Sinicization; Use Beijing time zone time; CNAME 
+#files are automatically exported.
+#########################################################################################
+
+#########################################################################################
 #### Configuration Section
 #########################################################################################
 
@@ -20,6 +27,7 @@ VIEW_IMGURL="https://gcore.jsdelivr.net/gh/wzwtt/ikun@gallery/"  ## must end wit
 MY_INDEX_HTML_FILE="index.html"
 MY_TITLE="IKUN 表情包一览"
 MY_FOOTER='本页面自动生成于'
+CNAME="ikun.wzwtt.cf"
 
 # Use convert from ImageMagick
 MY_CONVERT_COMMAND="convert" 
@@ -112,7 +120,7 @@ for MY_RES in ${MY_HEIGHTS[*]}; do
 done
 
 ### Create CNAME file
-echo "ikun.wzwtt.cf" >> CNAME
+echo $CNAME >> CNAME
 
 #### Create Startpage
 debugOutput "$OUTPUT/$MY_INDEX_HTML_FILE"
