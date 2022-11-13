@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2.5.0
+      run: |
+        git clone https://${{ secrets.ACCESS_TOKEN }}@github.com/wzwtt/ikun.git
     - name: Preparing the environment
       run: |
         sudo apt install imagemagick jhead
@@ -21,6 +22,11 @@ jobs:
         bash gallery.sh
     - name: Pushing
       run: |
-        cd ikun/output
-        git init
-        
+        cd ikun
+        git checkout gallery
+        cd ..
+        cp -r output/. ikun
+        cd ikun
+        git add .
+        git commit -m "Create Gallery"
+        git push origin gallery --force
