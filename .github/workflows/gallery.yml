@@ -25,7 +25,7 @@ jobs:
         git config --global user.email "wzwttol@outlook.com"
         git config --global user.name "wzwtt"
         cd ikun
-        git checkout gallery
+        git checkout -f gallery
         cd ..
         cp -r output/. ikun
         cd ikun
