@@ -1,11 +1,9 @@
 # 欢迎各位 IKUN ！
-这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集的 IKUN 表情包。感谢制作这些表情包的**全民制作人**。
+这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集或制作的 IKUN 表情包。感谢制作这些表情包的**全民制作人**。
 
 [IKUN 表情包一览](https://ikun.wzwtt.cf)（目前仅提供静态图片的预览）
 
 如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) [（镜像下载）](https://drive.wzwtt.cf/mirrors/github-release/current/dotnetcore_FastGithub/) 工具加速访问。使用 [Github 镜像站](https://github.wzwtt.cf/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
-
-仓库中 gallery.sh 文件源代码修改自 [gallery_shell](https://github.com/Cyclenerd/gallery_shell) 项目，按照 [gallery_shell](https://github.com/Cyclenerd/gallery_shell) 的开源许可证要求，本项目遵循 GNU General Public License v3.0 协议。
 
 ## 目录说明
 still —— 静态表情包
@@ -30,6 +28,12 @@ help —— 帮助文档
 **注意：在上传前请检查您所贡献的表情包是否他人未曾上传过，确认文件是否根据[命名规则](/help/name_rules.md)正确命名并且已经放置在正确的分类文件夹内。**
 
 让我们一起创造历史。
+
 ### 文档
 #### [如何导出表情包](/help/export.md)
+
+## 说明
+本项目中所收录的表情包均为各全民制作人网友制作，表情包图片中的所有信息（如水印等）均原版保留。如果您发现这里收录了您的作品，但您不希望它被收录的，请发 Pull requests 说明并删除。
+
+仓库中 gallery.sh 文件源代码修改自 [gallery_shell](https://github.com/Cyclenerd/gallery_shell) 项目，按照 [gallery_shell](https://github.com/Cyclenerd/gallery_shell) 的开源许可证要求，本项目遵循 GNU General Public License v3.0 协议。
 
