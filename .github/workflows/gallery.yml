@@ -29,6 +29,7 @@ jobs:
         cd ..
         cp -r output/. ikun
         cd ikun
+        git restore --source master -- favicon.ico
         git add .
         git commit -m "Create Gallery"
         git push origin gallery --force
