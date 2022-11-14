@@ -202,7 +202,7 @@ while [[ $MY_FILE -lt $MY_NUM_FILES ]]; do
 <head>
 <meta charset="utf-8">
 <title>$MY_FILENAME</title>
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="../favicon.ico">
 <meta name="viewport" content="width=device-width">
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="$MY_CSS">
