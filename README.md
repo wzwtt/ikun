@@ -10,6 +10,8 @@ still —— 静态表情包
 
 gif —— 动态表情包
 
+head_portrait —— 头像
+
 help —— 帮助文档
 
 ## 贡献
