@@ -34,6 +34,9 @@ help —— 帮助文档
 ### 文档
 #### [如何导出表情包](/help/export.md)
 
+### 鸣谢
+[xipulasiCPLUS](https://github.com/xipulasiCPLUS) 和 ThreeManager785 的 ikun 军火库为本图库提供了大量的表情包，在此表示感谢！
+
 ## 说明
 本项目中所收录的表情包均为各全民制作人网友制作，表情包图片中的所有信息（如水印等）均原版保留。如果您发现这里收录了您的作品，但您不希望它被收录的，请发 Pull requests 说明并删除。
 
