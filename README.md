@@ -3,7 +3,7 @@
 
 [IKUN 表情包一览](https://ikun.wzwtt.cf)（目前仅提供静态图片的预览）
 
-如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) [（镜像下载）](https://drive.wzwtt.cf/mirrors/github-release/current/dotnetcore_FastGithub/) 工具加速访问。使用 [Github 镜像站](https://github.wzwtt.cf/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
+如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) 工具加速访问。使用 [Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
 
 ## 目录说明
 still —— 静态表情包
@@ -35,7 +35,7 @@ help —— 帮助文档
 #### [如何导出表情包](/help/export.md)
 
 ### 鸣谢
-[xipulasiCPLUS](https://github.com/xipulasiCPLUS) 和 ThreeManager785 的 ikun 军火库为本图库提供了大量的表情包，在此表示感谢！
+[xipulasiCPLUS](https://github.com/xipulasiCPLUS) 和 [ThreeManager785](https://github.com/ThreeManager785) 的 ikun 军火库为本图库提供了大量的表情包，在此表示感谢！
 
 ## 说明
 本项目中所收录的表情包均为各全民制作人网友制作，表情包图片中的所有信息（如水印等）均原版保留。如果您发现这里收录了您的作品，但您不希望它被收录的，请发 Pull requests 说明并删除。
