@@ -3,6 +3,8 @@
 
 [IKUN 表情包一览](https://ikun.wzwtt.cf)（目前仅提供静态图片的预览）
 
+**注意：这里出现的各种图片名称文字仅作为谐音梗使用，在其他场合请使用规范汉字书写。**
+
 如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) 工具加速访问。使用 [Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
 
 ## 目录说明
@@ -41,8 +43,8 @@ help —— 帮助文档
 gallery.sh 脚本用于构建 IKUN 相册网页。[这是由 GitHub Actions 自动构建的 Demo](https://ikun.wzwtt.cf/) 。以下示例命令为在 Ubuntu 下构建本地 IKUN 相册网页。
 
 ```bash
+sudo apt install imagemagick jhead git
 git clone https://github.com/wzwtt/ikun.git
-sudo apt install imagemagick jhead
 cd ikun
 bash gallery.sh
 ```
