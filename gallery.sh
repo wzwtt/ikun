@@ -22,8 +22,8 @@ MY_QUALITY=85
 MY_THUMBDIR="thumbs"
 INPUT="$(pwd)/still"
 OUTPUT="$(pwd)/../output"
-SOURCE_IMGURL="https://images.weserv.nl/?url=https://raw.githubusercontent.com/wzwtt/ikun/master/still/"   ##"$INPUT/"   ## must end with "/"
-VIEW_IMGURL="https://images.weserv.nl/?url=https://raw.githubusercontent.com/wzwtt/ikun/gallery/"  ## must end with "/"
+SOURCE_IMGURL="https://wsrv.nl/?url=https://raw.githubusercontent.com/wzwtt/ikun/master/still/"   ##"$INPUT/"   ## must end with "/"
+VIEW_IMGURL="https://wsrv.nl/?url=https://raw.githubusercontent.com/wzwtt/ikun/gallery/"  ## must end with "/"
 MY_INDEX_HTML_FILE="index.html"
 MY_TITLE="IKUN 表情包大全 - 坤图大全"
 MY_FOOTER='本页面自动生成于'
