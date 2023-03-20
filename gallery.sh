@@ -9,7 +9,7 @@
 #The modified functions of wzwtt are as follows: make the input/output directory 
 #changeable; The generated image can be easily loaded using CDNs such as jsdelivr; 
 #Add PNG format picture support; Sinicization; Use Beijing time zone time; CNAME 
-#files are automatically exported.
+#files are automatically exported; Use the API to reduce the output directory size.
 #########################################################################################
 
 #########################################################################################
@@ -30,6 +30,7 @@ MY_FOOTER='本页面自动生成于'
 CNAME="ikun.wzwtt.cf"
 
 # Use convert from ImageMagick
+USE_WSRV_API=true
 MY_CONVERT_COMMAND="convert" 
 # Use JHead for EXIF Information
 MY_EXIF_COMMAND="jhead"
@@ -115,9 +116,12 @@ command -v $MY_EXIF_COMMAND >/dev/null 2>&1 || { echo >&2 "!!! $MY_EXIF_COMMAND 
 
 MY_HEIGHTS[0]=$MY_HEIGHT_SMALL
 MY_HEIGHTS[1]=$MY_HEIGHT_LARGE
-for MY_RES in ${MY_HEIGHTS[*]}; do
-	[[ -d "$OUTPUT/$MY_THUMBDIR/$MY_RES" ]] || mkdir -p "$OUTPUT/$MY_THUMBDIR/$MY_RES" || exit 3
-done
+
+if [[ "$USE_WSRV_API" == false ]]; then  
+  for MY_RES in ${MY_HEIGHTS[*]}; do
+  	[[ -d "$OUTPUT/$MY_THUMBDIR/$MY_RES" ]] || mkdir -p "$OUTPUT/$MY_THUMBDIR/$MY_RES" || exit 3
+  done
+fi
 
 ### Create CNAME file
 echo $CNAME >> CNAME
@@ -168,16 +172,21 @@ MY_NUM_FILES=0
 for MY_FILENAME in *.[jJpP][pPnN][gG]; do
 	MY_FILELIST[$MY_NUM_FILES]=$MY_FILENAME
 	(( MY_NUM_FILES++ ))
-	for MY_RES in ${MY_HEIGHTS[*]}; do
-		if [[ ! -s $OUTPUT/$MY_THUMBDIR/$MY_RES/$MY_FILENAME ]]; then
-			debugOutput "$OUTPUT/$MY_THUMBDIR/$MY_RES/$MY_FILENAME"
-			$MY_CONVERT_COMMAND -auto-orient -strip -quality $MY_QUALITY -resize x$MY_RES "$MY_FILENAME" "$OUTPUT/$MY_THUMBDIR/$MY_RES/$MY_FILENAME"
-		fi
-	done
+	if [[ "$USE_WSRV_API" == false ]]; then
+	  for MY_RES in ${MY_HEIGHTS[*]}; do
+	  	if [[ ! -s $OUTPUT/$MY_THUMBDIR/$MY_RES/$MY_FILENAME ]]; then
+	  		debugOutput "$OUTPUT/$MY_THUMBDIR/$MY_RES/$MY_FILENAME"
+	  		$MY_CONVERT_COMMAND -auto-orient -strip -quality $MY_QUALITY -resize x$MY_RES "$MY_FILENAME" "$OUTPUT/$MY_THUMBDIR/$MY_RES/$MY_FILENAME"
+	  	fi
+	  done
+	  img_scr=$VIEW_IMGURL$MY_THUMBDIR/$MY_HEIGHT_SMALL/$MY_FILENAME
+	else
+	  img_scr="$SOURCE_IMGURL$MY_FILENAME&h=$MY_HEIGHT_SMALL"
+	fi
 	cat >> "$OUTPUT/$MY_INDEX_HTML_FILE" << EOF
 <div class="col">
 	<p>
-		<a href="$MY_THUMBDIR/$MY_FILENAME.html"><img src="$VIEW_IMGURL$MY_THUMBDIR/$MY_HEIGHT_SMALL/$MY_FILENAME" alt="Thumbnail: $MY_FILENAME" class="rounded mx-auto d-block"></a>
+		<a href="$MY_THUMBDIR/$MY_FILENAME.html"><img src="$img_scr" alt="Thumbnail: $MY_FILENAME" class="rounded mx-auto d-block"></a>
 	</p>
 </div>
 EOF
@@ -249,10 +258,16 @@ EOF
 	fi
 	echo '</div></div>' >> "$MY_IMAGE_HTML_FILE"
 
+   if [ $USE_WSRV_API = "true" ]; then
+     img_scr="$SOURCE_IMGURL$MY_FILENAME&h=$MY_HEIGHT_LARGE"
+   else
+     img_scr=$VIEW_IMGURL$MY_THUMBDIR/$MY_HEIGHT_LARGE/$MY_FILENAME
+   fi
+
 	cat >> "$MY_IMAGE_HTML_FILE" << EOF
 <div class="row">
 	<div class="col">
-		<p><img src="$VIEW_IMGURL$MY_THUMBDIR/$MY_HEIGHT_LARGE/$MY_FILENAME" class="img-fluid" alt="Image: $MY_FILENAME"></p>
+		<p><img src="$img_scr" class="img-fluid" alt="Image: $MY_FILENAME"></p>
 	</div>
 </div>
 <div class="row">
