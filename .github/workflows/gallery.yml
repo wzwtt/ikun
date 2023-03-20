@@ -11,24 +11,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      run: |
-        git clone https://${{ secrets.ACCESS_TOKEN }}@github.com/wzwtt/ikun.git
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 
     - name: Preparing the environment
       run: |
         sudo apt install imagemagick jhead
     - name: Creating Gallery
       run: |
-        cd ikun
         bash gallery.sh
+    - name: Creating SiteMap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://ikun.wzwtt.cf/
     - name: Pushing
       run: |
         git config --global user.email "wzwttol@outlook.com"
         git config --global user.name "wzwtt"
-        cd ikun
         git checkout -f gallery
-        cd ..
-        cp -r output/. ikun
-        cd ikun
+        cp -r ../output/. ikun
         git restore --source master -- favicon.ico
         git add .
         git commit -m "Create Gallery"
