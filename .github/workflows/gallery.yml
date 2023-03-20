@@ -23,7 +23,7 @@ jobs:
     - name: Checkout Gallery
       run: |
         git checkout -f gallery
-        cp -r ../output/. ikun
+        cp -r ../output/. .
         git restore --source master -- favicon.ico        
     - name: Creating SiteMap
       id: sitemap
