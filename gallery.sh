@@ -29,6 +29,8 @@ MY_TITLE="IKUN 表情包大全 - 坤图大全"
 MY_FOOTER='本页面自动生成于'
 CNAME="ikun.wzwtt.cf"
 
+SEARCH_BAR_PLUGIN="<script async src="https://js.sitesearch360.com/plugin/bundle/12728.js"></script>"
+
 # Use convert from ImageMagick
 USE_WSRV_API=true
 MY_CONVERT_COMMAND="convert" 
@@ -366,6 +368,7 @@ cat >> "$OUTPUT/$MY_INDEX_HTML_FILE" << EOF
 		<span class="text-muted">$MY_FOOTER $MY_DATETIME</span>
 	</div>
 </footer>
+$SEARCH_BAR_PLUGIN
 </body>
 </html>
 EOF
