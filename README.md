@@ -5,7 +5,7 @@
 
 **注意：这里出现的各种图片名称文字仅作为谐音梗使用，在其他场合请使用规范汉字书写。**
 
-如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [FastGithub](https://github.com/dotnetcore/FastGithub) 工具加速访问。使用 [Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
+如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [Watt Toolkit](https://github.com/BeyondDimension/SteamTools) 工具加速访问。使用 [Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
 
 ## 目录说明
 still —— 静态表情包
@@ -25,7 +25,7 @@ help —— 帮助文档
 
 每个人的力量都很重要。如果这是您第一次参与开源社区，请查阅有关资料，了解如何为开源社区贡献您的力量。我们深知略显复杂的操作可能会给作为入门者的您带来重重困难。尽管道路崎岖，但我们坚信有关详细的资料以及您对咯咯的爱，一定会为您扫除一切障碍。
 
-[Github 镜像站](https://github.wzwtt.cf/wzwtt/ikun)和 [Gitee](https://gitee.com/wzwtt/ikun) 仅作镜像使用，请务必在 [Github](https://github.com/wzwtt/ikun) 上提交贡献。
+[Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)和 [Gitee](https://gitee.com/wzwtt/ikun) 仅作镜像使用，请务必在 [Github](https://github.com/wzwtt/ikun) 上提交贡献。
 
 建议使用 Git 版本控制工具上传并提交 Pull requests 。
 
