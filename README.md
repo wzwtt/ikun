@@ -5,7 +5,7 @@
 
 **注意：这里出现的各种图片名称文字仅作为谐音梗使用，在其他场合请使用规范汉字书写。**
 
-如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [Watt Toolkit](https://github.com/BeyondDimension/SteamTools) 工具加速访问。使用 [Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)或 [Gitee](https://gitee.com/wzwtt/ikun) 也可查看本项目。
+如果您的 GitHub 无法打开、加载缓慢或无法显示图片，建议使用 [Watt Toolkit](https://github.com/BeyondDimension/SteamTools) 工具加速访问。使用 [Gitee](https://gitee.com/wzwtt/ikun) 镜像也可查看本项目。
 
 ## 目录说明
 still —— 静态表情包
