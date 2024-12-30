@@ -1,7 +1,7 @@
 # 欢迎各位 IKUN ！
 这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集或制作的 IKUN 表情包。感谢制作这些表情包的**全民制作人**。
 
-[IKUN 表情包一览](https://ikun.wzwtt.cf)（目前仅提供静态图片的预览）
+[IKUN 表情包一览](https://ikun.wcy.one)（目前仅提供静态图片的预览）
 
 **注意：这里出现的各种图片名称文字仅作为谐音梗使用，在其他场合请使用规范汉字书写。**
 
@@ -25,7 +25,7 @@ help —— 帮助文档
 
 每个人的力量都很重要。如果这是您第一次参与开源社区，请查阅有关资料，了解如何为开源社区贡献您的力量。我们深知略显复杂的操作可能会给作为入门者的您带来重重困难。尽管道路崎岖，但我们坚信有关详细的资料以及您对咯咯的爱，一定会为您扫除一切障碍。
 
-[Github 镜像站](https://github.ttmirrors.eu.org/wzwtt/ikun)和 [Gitee](https://gitee.com/wzwtt/ikun) 仅作镜像使用，请务必在 [Github](https://github.com/wzwtt/ikun) 上提交贡献。
+[Gitee](https://gitee.com/wzwtt/ikun) 仅作镜像使用，请务必在 [Github](https://github.com/wzwtt/ikun) 上提交贡献。
 
 建议使用 Git 版本控制工具上传并提交 Pull requests 。
 
