@@ -27,7 +27,7 @@ VIEW_IMGURL="https://wsrv.nl/?url=https://raw.githubusercontent.com/wzwtt/ikun/g
 MY_INDEX_HTML_FILE="index.html"
 MY_TITLE="IKUN 表情包大全 - 坤图大全"
 MY_FOOTER='本页面自动生成于'
-CNAME="ikun.wzwtt.cf"
+CNAME="ikun.wcy.one"
 
 SEARCH_BAR_PLUGIN="<script async src="https://js.sitesearch360.com/plugin/bundle/12728.js"></script>"
 
