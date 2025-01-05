@@ -32,6 +32,9 @@ jobs:
           chmod +x ./generate-pics-json.sh
           ./generate-pics-json.sh ./still ./vue/ikun/dist/pics.json
 
+      - name: Create CNAME
+        run: echo 'ikun.wcy.one' > ./vue/ikun/dist/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
