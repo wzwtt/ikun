@@ -23,14 +23,14 @@ jobs:
         working-directory: ./vue/ikun
         run: npm ci
 
+      - name: Build Vue Project
+        working-directory: ./vue/ikun
+        run: npm run build
+
       - name: Generate Image List
         run: |
           chmod +x ./generate-pics-json.sh
           ./generate-pics-json.sh ./still ./vue/ikun/dist/pics.json
-
-      - name: Build Vue Project
-        working-directory: ./vue/ikun
-        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
