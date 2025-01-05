@@ -246,4 +246,43 @@ body {
 .retry-button:hover {
   background-color: #495057;
 }
+
+/* Mobile device adaptation */
+@media (max-width: 768px) {
+  .header_text {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .github {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .theme-toggle {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .header {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 360px) {
+  .header_text {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+}
 </style>
