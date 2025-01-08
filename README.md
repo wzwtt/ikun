@@ -1,7 +1,7 @@
 # 欢迎各位 IKUN ！
 这里收集各种 IKUN 专属表情包，耗费时长两年半。欢迎各位真爱粉（不欢迎小黑子）自取，更欢迎各位贡献自己所收集或制作的 IKUN 表情包。感谢制作这些表情包的**全民制作人**。
 
-[IKUN 表情包一览](https://ikun.wcy.one)（目前仅提供静态图片的预览）
+[IKUN 表情包一览](https://ikun.wcy.one)（不支持 Internet Explorer 浏览器，目前仅提供静态图片的预览）
 
 **注意：这里出现的各种图片名称文字仅作为谐音梗使用，在其他场合请使用规范汉字书写。**
 
@@ -13,6 +13,8 @@ still —— 静态表情包
 gif —— 动态表情包
 
 head_portrait —— 头像
+
+vue —— 网站源代码
 
 help —— 帮助文档
 
@@ -40,7 +42,18 @@ help —— 帮助文档
 [xipulasiCPLUS](https://github.com/xipulasiCPLUS) 和 [ThreeManager785](https://github.com/ThreeManager785) 的 ikun 军火库为本图库提供了大量的表情包，在此表示感谢！
 
 ## 构建
-gallery.sh 脚本用于构建 IKUN 相册网页。[这是由 GitHub Actions 自动构建的 Demo](https://ikun.wzwtt.cf/) 。以下示例命令为在 Ubuntu 下构建本地 IKUN 相册网页。
+为了实现更灵活的功能，[网页](https://ikun.wcy.one/)的构建工具已从 gallery.sh 脚本迁移到 vue3 。请先使用 [Node Version Manager](https://github.com/nvm-sh/nvm) 安装 Node.js ,推荐版本为 v22 ，然后使用以下命令构建本项目。
+
+```bash
+git clone https://github.com/wzwtt/ikun.git
+cd ikun/vue/ikun
+npm install
+npm run dev     //构建用于开发的页面，或：
+npm run build   //构建用于发布的页面
+```
+
+## 基于 gallery.sh 的构建（已废弃）
+gallery.sh 脚本用于构建 IKUN 相册网页。[这是由 GitHub Actions 自动构建的 Demo](https://ikun.wcy.one/) 。以下示例命令为在 Ubuntu 下构建本地 IKUN 相册网页。
 
 ```bash
 sudo apt install imagemagick jhead git
